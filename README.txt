@@ -1,21 +1,21 @@
 ===========
 INSTALLATION:
-Download Python 3.7 or higher from https://www.python.org/downloads/
+Download Python 3.7 or higher from https://www.python.org/
 (When installing make sure it sets python to "PATH" by default so that pip can be used to install packages)
 Install pipenv (using pip)
-Run the following command in the CMD from the “Nuget Download Tool” Directory: “pipenv install”. This will install all dependencies used by this project.
+Run the following command in the CMD from the â€œNuget Download Toolâ€ Directory: â€œpipenv installâ€. This will install all dependencies used by this project.
 Once the dependencies have been installed you are good to go!
 
 ===========
 HOW TO USE:
 
 1) Excel Mode: 
-Fill a list of libraries and their sha1 hashes to the “Input.xlsx” excel file.
-Run the following command in the CMD from the “Nuget Download Tool” Directory: “pipenv run excel.py”.
-When the script finishes running, the results will be shown in the “Output.xlsx” Excel.
+Fill a list of libraries and their sha1 hashes to the â€œInput.xlsxâ€ excel file.
+Run the following command in the CMD from the â€œNuget Download Toolâ€ Directory: â€œpipenv run excel.pyâ€.
+When the script finishes running, the results will be shown in the â€œOutput.xlsxâ€ Excel.
 
 The result for each library will be one of three options:
--Package was not found-  If the package wasn’t found on Nuget in this exact name.
+-Package was not found-  If the package wasnâ€™t found on Nuget in this exact name.
 
 -Suspected - If the package is found but had no Sha1 match in any of the versions.
 
