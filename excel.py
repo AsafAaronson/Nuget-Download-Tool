@@ -44,7 +44,7 @@ for file_hash_tuple in zip(filenames, hashes): # for each row in the excel file
                 hash_results[downloaded_package_name] = [f.hash_calculator(v.default_path_to + downloaded_package_name + v.package_suffix)]
             else: # extract and calculate
                 f.extract_package(downloaded_package_name + v.package_suffix)
-                hash_results[downloaded_package_name] = f.hash_calculate_directory(downloaded_package_name)
+                hash_results[downloaded_package_name] = f.hash_calculate_directory(downloaded_package_name) + [f.hash_calculator(v.default_path_to + downloaded_package_name + v.package_suffix)]
             print(hash_results[downloaded_package_name])
         for package in hash_results:
             if inst.sha_1.lower() in hash_results[package]:
