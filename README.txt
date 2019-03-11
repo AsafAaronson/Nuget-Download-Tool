@@ -9,7 +9,8 @@ Once the dependencies have been installed you are good to go!
 ===========
 HOW TO USE:
 
-1) Excel Mode: 
+1) Excel Mode:
+Command: pipenv run excel.py
 Fill a list of libraries and their sha1 hashes to the “Input.xlsx” excel file.
 Run the following command in the CMD from the “Nuget Download Tool” Directory: “pipenv run excel.py”.
 When the script finishes running, the results will be shown in the “Output.xlsx” Excel.
@@ -22,6 +23,7 @@ The result for each library will be one of three options:
 -Match Found in: <package name.version> - If the hash matched one of the hashes in the package in the version.
 
 2) On Demand Mode
+Command: pipenv run on_demand.py
 Insert a package name, a version(optional) and a suffix(optional).
 Examples: project-1.1.8.nupkg  -  project.2.2.0.dll  -  project-1.3.2.exe  -  project
 
